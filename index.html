@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="top-h1">Generate a </h1>
+    <h1 class="bottom-h1">random password</h1>
+    <p>Never use an insecure password again.</p>   
+    <input type="number" min="1" id="length-el" class="num-input">
+    <button class="btn" onclick="generatePassword()">
+        Generate passwords
+    </button>
+
+    <hr>
+
+    <div class="container">
+        <span class="pwd-span-style" id="firstPassword-el">
+            Password here!
+        </span>        
+        <button class="img-btn" onclick="copyFirstPassword()">
+            <img src="icons/clipboard.png" class="icon">
+        </button>            
+        
+        <span class="pwd-span-style" id="secondPassword-el">
+            Password here!
+        </span>        
+        <button onclick="copySecondPassword()" class="img-btn">
+            <img src="icons/clipboard.png" class="icon">
+        </button>
+    </div>   
+    <script src="index.js"></script>
+</body>
+</html>
